@@ -9,7 +9,7 @@ services:
       NODE_ENV: production
       PORT: 3000 # Change it if you'd like; be sure to change it down below as well though
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:$$PORT/ping"]
+      test: ["CMD", "curl", "-f", "http://localhost:3000/ping"] # Change this!
       interval: 1m30s
       timeout: 10s
       retries: 3
