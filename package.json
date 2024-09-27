@@ -1,22 +1,30 @@
 {
-  "name": "backgrounder",
-  "version": "1.0.0",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dynamyc010/backgrounder.git"
-  },
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "^4.21.0",
-    "fs": "^0.0.1-security",
-    "http-errors": "~1.6.3",
-    "jade": "^0.29.0",
-    "morgan": "~1.9.1",
-    "path": "^0.12.7"
-  }
+	"name": "backgrounder",
+	"version": "1.0.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dynamyc010/backgrounder.git"
+	},
+	"scripts": {
+		"start": "node ./bin/www"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"express": "^4.21.0",
+		"fs": "^0.0.1-security",
+		"http-errors": "~1.6.3",
+		"jade": "^0.29.0",
+		"morgan": "~1.9.1",
+		"path": "^0.12.7",
+		"remove": "^0.1.5"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.11.1",
+		"eslint": "^9.11.1",
+		"globals": "^15.9.0",
+		"prettier": "3.3.3",
+		"prettier-eslint": "^16.3.0"
+	}
 }

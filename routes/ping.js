@@ -1,9 +1,9 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
 /* GET ping pong page. */
-router.get('/', function(req, res, next) {
-    res.send("Pong!");
+router.get("/", function (req, res) {
+	res.send("Pong!");
 });
 
 module.exports = router;
