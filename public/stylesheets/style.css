@@ -1,0 +1,50 @@
+html, body {
+
+  min-height: 100%;
+  
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  background-image: url("../gimme");
+  /* background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat; */
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+
+@media screen and (orientation:portrait) {
+  body {
+      background-position-y: top;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      /* filter: blur(8px);
+      -webkit-filter: blur(8px); */
+  }
+}
+
+body {
+  padding: 50px;
+  border-radius: 25px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  backdrop-filter: blur(8px);
+  color: white;
+  size: 100%
+}
+
+a {
+  color: #00B7FF;
+}
