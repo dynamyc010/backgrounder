@@ -2,6 +2,10 @@
   "name": "backgrounder",
   "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynamyc010/backgrounder.git"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
