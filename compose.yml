@@ -6,8 +6,15 @@ services:
     networks:
       traefik:
     environment:
-      - NODE_ENV=production
-      - PORT=3000 # Change it if you'd like
+      NODE_ENV: production
+      PORT: 3000 # Change it if you'd like; be sure to change it down below as well though
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:$$PORT/ping"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+      start_interval: 5s
     volumes:
       - ./:/home/node/app
     expose:
