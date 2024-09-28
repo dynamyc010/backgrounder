@@ -4,7 +4,7 @@ A little NodeJS thing I threw together so I can reliably get random wallpapers f
 
 ## Requirements
 
-- Node 20
+- Node
   - Tested with `v20.17.0`
 - Any of the Node Package Managers
 
