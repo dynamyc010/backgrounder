@@ -3,6 +3,13 @@ var router = express.Router();
 const path = require("path");
 const fs = require("fs");
 
+const Colors = {
+	red: "\x1b[31m",
+	yellow: "\x1b[33m",
+	green: "\x1b[32m",
+	default: "\x1b[0m"
+}
+
 /* GET random image */
 router.get("/", function (req, res) {
 	const options = {
@@ -17,9 +24,9 @@ router.get("/", function (req, res) {
 			res.sendFile(file, options, function (err) {
 				if (err) {
 					res.status(500);
-					// console.log("Error: ", err);
+					console.log(`${Colors.red}Error: ${Colors.default}${err}`);
 				} else {
-					// console.log("Image sent.");
+					console.log(`${Colors.green}Sent image: ${Colors.default}${file} `);
 				}
 			});
 		} else {
